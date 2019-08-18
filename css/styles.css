@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+  font-family: "Dosis", Arial;
+  color: rgb(50, 50, 50);
+  background-color: rgb(245, 245, 245);
+}
+
+.navigaton-pannel {
+  background-color: rgba(0, 206, 221, 0.315);
+  height: 10vh;
+  padding-left: 18vw;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+.btn:link,
+.btn:visited {
+  text-align: center;
+  font-weight: 700;
+  line-height: 2.4;
+  border-radius: 40px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+  color: rgb(50, 50, 50);
+
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+  color: rgb(50, 50, 50);
+}
+
+.btn-download {
+  position: absolute;
+  background-color: #ffe600;    
+  height: 40px;
+  width: 150px;
+  top: 20px;
+  right: 40px;
+}
+
+.menu-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 05vw;
+}
+
+.menu-button {
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+  font-weight: 700;
+  background-color: white;
+  color: rgb(0, 206, 221);
+  padding-left: 02vw;
+  padding-right: 02vw;
+  text-align: center;
+  border-radius: 30px;
+  line-height: 2.4;
+}
+
+.banner-image {
+  background-image: linear-gradient(
+      to right top,
+      rgba(139, 255, 85, 0.3),
+      rgba(240, 77, 255, 0.3)
+    ),
+    url("../images/vacations-1354563_1920.jpg");
+  background-size: cover;
+  background-color: transparent;
+  height: 60vh;
+  background-position: center;
+  background-color: transparent;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+}
+
+.profile-picture {
+  background-image: url('../images/profile.png');
+  position: absolute;
+  border-radius: 50%;
+  border: 8px solid #ffe600;
+  width: 140px;
+  height: 140px;
+  right: 10%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(230, 230, 230, 0.39);
+}
+
+.d-section {
+  background-color: rgb(245, 245, 245);
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+}
+
+.d-block {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.container-box {
+  width: 25%;
+  padding-left: 40px;
+}
+
+.roundify {
+  background-color: rgba(219, 219, 219, 0.226);
+  border-radius: 30px;
+}
+
+.my-message {
+  animation: messageBounce 2s ease-out 2s;
+}
+
+@keyframes messageBounce {
+  0% {
+  }
+
+  100% {
+  }
+}
+
+.speech-bubble {
+    
+	background: rgba(255, 255, 255, 0.8);
+	position: relative;
+    text-align: center;
+    top: 50px;
+    padding: 20px;
+    margin: 20px 30px;
+    
+    margin-left: 400px;
+    width: 650px;
+    border-radius: 10px;
+    font-size: 18pt;
+    font-weight: 500;
+}
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 25%;
+	left: 100%;
+	margin-top: -10px;
+	width: 0;
+	height: 0;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid rgb(255, 255, 255, 0.8);
+}
+
+h1{
+    top: 50%;
+    line-height: 1.75;
+    font-size: 30pt;
+}
