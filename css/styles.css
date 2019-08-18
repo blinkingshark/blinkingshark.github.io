@@ -203,6 +203,16 @@ h1 {
   width: 300px;
   height: 450px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 1px 1px 20px rgb(216, 216, 216) ;
-  
+  box-shadow: 1px 1px 20px rgb(216, 216, 216) ; 
+  text-align: center
+}
+
+.card img{
+  padding-top: 20px;
+  max-height: 300px;
+}
+
+.card p{
+  font-size: 8pt;
+  padding: 5px;
 }
