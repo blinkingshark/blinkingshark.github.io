@@ -33,7 +33,6 @@ a {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
   color: rgb(50, 50, 50);
-
 }
 
 .btn:active {
@@ -44,7 +43,7 @@ a {
 
 .btn-download {
   position: absolute;
-  background-color: #ffe600;    
+  background-color: #ffe600;
   height: 40px;
   width: 150px;
   top: 20px;
@@ -88,7 +87,7 @@ a {
 }
 
 .profile-picture {
-  background-image: url('../images/profile.png');
+  background-image: url("../images/profile.png");
   position: absolute;
   border-radius: 50%;
   border: 8px solid #ffe600;
@@ -143,45 +142,67 @@ a {
 
 @keyframes messageBounce {
   0% {
+    transform: translateX(-100px);
+  }
+  80%{
+    transform: translateX(+5px);
+    
   }
 
   100% {
+    transform: translateX(0px);
+    
   }
 }
 
 .speech-bubble {
-    
-	background: rgba(255, 255, 255, 0.8);
-	position: relative;
-    text-align: center;
-    top: 50px;
-    padding: 20px;
-    margin: 20px 30px;
-    
-    margin-left: 400px;
-    width: 650px;
-    border-radius: 10px;
-    font-size: 18pt;
-    font-weight: 500;
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  text-align: center;
+  top: 50px;
+  padding: 20px;
+  margin: 20px 30px;
+
+  margin-left: 400px;
+  width: 650px;
+  border-radius: 10px;
+  font-size: 18pt;
+  font-weight: 500;
+
+  animation-name: messageBounce;
+  animation-timing-function: ease-out;
+  animation-duration: 0.5s;
+
+  
 }
 .speech-bubble:after {
-	content: '';
-	position: absolute;
-	display: block;
-	top: 25%;
-	left: 100%;
-	margin-top: -10px;
-	width: 0;
-	height: 0;
-	width: 0;
-	height: 0;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-left: 10px solid rgb(255, 255, 255, 0.8);
+  content: "";
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 100%;
+  margin-top: -10px;
+  width: 0;
+  height: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid rgb(255, 255, 255, 0.8);
 }
 
-h1{
-    top: 50%;
-    line-height: 1.75;
-    font-size: 30pt;
+h1 {
+  top: 50%;
+  line-height: 1.75;
+  font-size: 30pt;
+}
+
+.card {
+  display: inline-block;
+  margin-left: 5px;
+  width: 300px;
+  height: 450px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 20px rgb(216, 216, 216) ;
+  
 }
