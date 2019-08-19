@@ -4,7 +4,6 @@
 }
 
 body {
-  padding: 20px;
   font-family: "Dosis", Arial;
   color: rgb(50, 50, 50);
   background-color: rgb(245, 245, 245);
@@ -12,7 +11,6 @@ body {
 
 .navigaton-pannel {
   background-color: rgba(68, 88, 182);
-  height: 10vh;
   padding-left: 18vw;
   position: relative;
 }
@@ -20,6 +18,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .btn:link,
 .btn:visited {
   text-align: center;
@@ -46,7 +45,7 @@ a {
   background-color: #ffe600;
   height: 40px;
   width: 150px;
-  top: 20px;
+  top: 5px;
   right: 40px;
 }
 
@@ -72,33 +71,33 @@ a {
 }
 
 .banner-image {
-  background-image: linear-gradient(
-      to right top,
+  background-image: linear-gradient(to right top,
       rgba(139, 255, 85, 0.3),
-      rgba(240, 77, 255, 0.3)
-    ),
+      rgba(240, 77, 255, 0.3)),
     url("../images/vacations-1354563_1920.jpg");
   background-size: cover;
   background-color: transparent;
   height: 60vh;
   background-position: center;
   background-color: transparent;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%); */
 }
 
 .profile-picture {
   background-image: url("../images/profile.png");
-  float: right;
-  /* position: absolute; */
   border-radius: 50%;
-  /* #ffe600; */
   border: 8px solid #fff;
   width: 140px;
   height: 140px;
   right: 10%;
   top: 40%;
-  transform: translate(-50%, -50%);
   background-color: rgba(230, 230, 230, 0.39);
+  margin: 20px;
+  display: inline-block;
+}
+
+.top-container {
+  text-align: end;
 }
 
 .d-section {
@@ -146,14 +145,15 @@ a {
   0% {
     transform: translateX(-100px);
   }
-  80%{
+
+  80% {
     transform: translateX(+5px);
-    
+
   }
 
   100% {
     transform: translateX(0px);
-    
+
   }
 }
 
@@ -162,9 +162,11 @@ a {
   position: relative;
   text-align: center;
   top: 20%;
-  padding: 20px;
-  margin: 20px 30px;
-  width: 650px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 5px;
+
+  max-width: 50%;
   border-radius: 10px;
   font-size: 18pt;
   font-weight: 500;
@@ -172,9 +174,12 @@ a {
   animation-name: messageBounce;
   animation-timing-function: ease-out;
   animation-duration: 0.5s;
+  display: inline-block;
 
-  
+
+
 }
+
 .speech-bubble:after {
   content: "";
   position: absolute;
@@ -193,7 +198,6 @@ a {
 
 h1 {
   top: 50%;
-  line-height: 1.75;
   font-size: 30pt;
 }
 
@@ -201,37 +205,75 @@ h1 {
   /* display: inline-block;
   margin-left: 5px;
   width: 300px; */
- min-height: 450px;
+  min-height: 450px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 1px 1px 20px rgb(216, 216, 216) ; 
+  box-shadow: 1px 1px 20px rgb(216, 216, 216);
   text-align: center;
   padding-bottom: 10px;
   margin-bottom: 30px;
 
 }
 
-.card img{
+.card img {
   padding-top: 20px;
   max-height: 300px;
+  max-width: 200px;
+
 }
 
-.card p{
+.card p {
   font-size: 10pt;
   /* padding: 20px; */
-  padding:  5px 20px 0px 20px;
+  padding: 5px 20px 0px 20px;
 }
 
-.card-container{
-  display:grid;
+.card-container {
+  display: grid;
   grid-auto-flow: 1fr;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
 }
 
 @media only screen and (max-width: 768px) {
-  .card-container{
+  .card-container {
     display: block;
   }
 
- 
-} 
+
+}
+
+
+@media only screen and (max-width: 470px) {
+  .profile-picture {
+    position: absolute;
+    top: 150px;
+    right: -10px;
+    margin: 0px;
+    transform: scale(.8);
+  }
+
+  .speech-bubble {
+    position: absolute;
+    left: 0px;
+    top: 150px;
+  }
+
+  .navigaton-pannel {
+    height: 150px;
+    text-align: center;
+  }
+
+  .btn-download {
+    transform: translateX(-50%);
+    top: 105px;
+    left: 50%;
+  }
+
+  .navigaton-pannel h1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+  }
+
+}
