@@ -4,7 +4,8 @@
 }
 
 body {
-  font-family: "Dosis", Arial;
+  /* font-family: "Dosis", Arial; */
+  font-family: 'Open Sans';
   color: rgb(50, 50, 50);
   background-color: rgb(245, 245, 245);
 }
@@ -71,10 +72,8 @@ a {
 }
 
 .banner-image {
-  background-image: linear-gradient(to right top,
-      rgba(139, 255, 85, 0.3),
-      rgba(240, 77, 255, 0.3)),
-    url("../images/vacations-1354563_1920.jpg");
+  background-image: 
+    url("../images/artificial-intelligence-code-codes-34676.jpg");
   background-size: cover;
   background-color: transparent;
   height: 60vh;
