@@ -4,15 +4,14 @@
 }
 
 body {
-  padding: 20px;
-  font-family: "Dosis", Arial;
+  /* font-family: "Dosis", Arial; */
+  font-family: 'Open Sans';
   color: rgb(50, 50, 50);
   background-color: rgb(245, 245, 245);
 }
 
 .navigaton-pannel {
-  background-color: rgba(0, 206, 221, 0.315);
-  height: 10vh;
+  background-color: rgba(68, 88, 182);
   padding-left: 18vw;
   position: relative;
 }
@@ -20,6 +19,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .btn:link,
 .btn:visited {
   text-align: center;
@@ -33,7 +33,6 @@ a {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
   color: rgb(50, 50, 50);
-
 }
 
 .btn:active {
@@ -44,10 +43,10 @@ a {
 
 .btn-download {
   position: absolute;
-  background-color: #ffe600;    
+  background-color: #ffe600;
   height: 40px;
   width: 150px;
-  top: 20px;
+  top: 5px;
   right: 40px;
 }
 
@@ -73,36 +72,36 @@ a {
 }
 
 .banner-image {
-  background-image: linear-gradient(
-      to right top,
-      rgba(139, 255, 85, 0.3),
-      rgba(240, 77, 255, 0.3)
-    ),
-    url("../images/vacations-1354563_1920.jpg");
+  background-image: 
+    url("../images/artificial-intelligence-code-codes-34676.jpg");
   background-size: cover;
   background-color: transparent;
   height: 60vh;
   background-position: center;
   background-color: transparent;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%); */
 }
 
 .profile-picture {
-  background-image: url('../images/profile.png');
-  position: absolute;
+  background-image: url("../images/profile.png");
   border-radius: 50%;
-  border: 8px solid #ffe600;
+  border: 8px solid #fff;
   width: 140px;
   height: 140px;
   right: 10%;
-  top: 30%;
-  transform: translate(-50%, -50%);
+  top: 40%;
   background-color: rgba(230, 230, 230, 0.39);
+  margin: 20px;
+  display: inline-block;
+}
+
+.top-container {
+  text-align: end;
 }
 
 .d-section {
   background-color: rgb(245, 245, 245);
-  width: 80%;
+  max-width: 80%;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 20px;
@@ -110,7 +109,7 @@ a {
 
 .d-block {
   background-color: rgb(255, 255, 255);
-  width: 80%;
+  max-width: 80%;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 20px;
@@ -143,45 +142,137 @@ a {
 
 @keyframes messageBounce {
   0% {
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(+5px);
+
   }
 
   100% {
+    transform: translateX(0px);
+
   }
 }
 
 .speech-bubble {
-    
-	background: rgba(255, 255, 255, 0.8);
-	position: relative;
-    text-align: center;
-    top: 50px;
-    padding: 20px;
-    margin: 20px 30px;
-    
-    margin-left: 400px;
-    width: 650px;
-    border-radius: 10px;
-    font-size: 18pt;
-    font-weight: 500;
-}
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	display: block;
-	top: 25%;
-	left: 100%;
-	margin-top: -10px;
-	width: 0;
-	height: 0;
-	width: 0;
-	height: 0;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-left: 10px solid rgb(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  text-align: center;
+  top: 20%;
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 5px;
+
+  max-width: 50%;
+  border-radius: 10px;
+  font-size: 18pt;
+  font-weight: 500;
+
+  animation-name: messageBounce;
+  animation-timing-function: ease-out;
+  animation-duration: 0.5s;
+  display: inline-block;
+
+
+
 }
 
-h1{
-    top: 50%;
-    line-height: 1.75;
-    font-size: 30pt;
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 100%;
+  margin-top: -10px;
+  width: 0;
+  height: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid rgb(255, 255, 255, 0.8);
+}
+
+h1 {
+  top: 50%;
+  font-size: 30pt;
+}
+
+.card {
+  /* display: inline-block;
+  margin-left: 5px;
+  width: 300px; */
+  min-height: 450px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 20px rgb(216, 216, 216);
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+
+}
+
+.card img {
+  padding-top: 20px;
+  max-height: 300px;
+  max-width: 200px;
+
+}
+
+.card p {
+  font-size: 10pt;
+  /* padding: 20px; */
+  padding: 5px 20px 0px 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-auto-flow: 1fr;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    display: block;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 470px) {
+  .profile-picture {
+    position: absolute;
+    top: 150px;
+    right: -10px;
+    margin: 0px;
+    transform: scale(.8);
+  }
+
+  .speech-bubble {
+    position: absolute;
+    left: 0px;
+    top: 140px;
+  }
+
+  .navigaton-pannel {
+    height: 150px;
+    text-align: center;
+  }
+
+  .btn-download {
+    transform: translateX(-50%);
+    top: 105px;
+    left: 50%;
+  }
+
+  .navigaton-pannel h1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+  }
+
 }
