@@ -115,6 +115,9 @@ a {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.d-row{
+  display: flex;
+}
 
 .footer {
   text-align: center;
@@ -275,4 +278,14 @@ h1 {
 
   }
 
+}
+
+.logo-holder{
+  text-align: center;
+}
+
+.education-logo{
+  padding: 10px;
+  max-width: 100px;
+  border: #ccc 1px;
 }
